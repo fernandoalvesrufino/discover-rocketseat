@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+
+  grid-template-areas: 
+    "header header"
+    "section aside"
+    "footer footer";
+
+  grid-template-rows: 2rem 1fr 2rem;
+  grid-template-columns: 1fr 10rem;
+}
+
+header {
+  grid-area: header;
+  background-color: orangered;
+}
+
+section {
+  grid-area: section;
+  background-color: black;
+  color: white;
+}
+
+aside {
+  grid-area: aside;
+  background-color: white;
+}
+
+footer {
+  grid-area: footer;
+  background-color: orangered;
+}
