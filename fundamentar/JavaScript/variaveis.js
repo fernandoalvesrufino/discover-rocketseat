@@ -166,3 +166,53 @@ let name
 // Mudar para 
 let checkIfNameExist
 // Aqui sabemos que o objetivo da variável é verificar se existe algum nome na variável checkIfNameExist
+
+
+/*
+Variáveis e tipos de dados
+
+Para declarar uma variável podemos usar var, let e const, e para atribuírmos valores à essa variável
+utilizamos o caractere =, e para vermos o tipo dessa variável podemos utilizar a função 
+console.log(typeof variavel).
+
+*/
+
+/*
+Agrupando declarações 
+
+É possível agrupar diversas declarações de variáveis em JavaScript usando let, const ou var e colocando uma vírgula entre os nomes das variáveis a serem criadas, por exemplo: 
+
+>>> let name, age, isStudent. 
+
+Para mostrar mais de uma variável no console.log também é possível usando vírgula, por exemplo: console.log(name, age, isStudent).
+
+*/
+
+let legs, age, isStudent
+
+legs = 2
+age = 26
+isStudent = true
+
+// Dessa forma o JS não consegue fazer a leitura e impressão dos dados
+// console.log(legs age isStudent)
+// A forma correta seria
+console.log(legs, age, isStudent)
+
+/*
+Concatenando e interpolando variáveis
+
+É possível concatenar strings com o operador +, por exemplo: 
+console.log('o ' + name + ' tem ' + age + ' anos.') 
+
+desta maneira as variáveis serão convertidas em texto e o que será mostrado será um texto com o nome e a
+idade que foram estabelecidas no código. 
+
+Uma outra maneira de escrever um texto com variáveis é por meio da interpolação com template literals, usando
+crase para o texto e ${} para denotar uma variável, por exemplo console.log(O ${name} tem ${age} anos.) 
+o resultado deste comando será o mesmo texto do anterior.
+
+*/
+
+// interpolação com template literals or template strings
+console.log(`Eu tenho ${legs} pernas. Tenho ${age} anos.`)
