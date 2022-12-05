@@ -54,7 +54,7 @@ PS: Hoje costumamos usar let e const. Dificilmente usamos var
 
 
 /*
-Scope
+Scope e var
 
 O Scope ou Escopo determina a visibilidade de uma variável em um código, e para entender scope precisamos 
 primeiramente entender block statement, que é o código presente dentro de chaves. O escopo do var é global, 
@@ -73,3 +73,48 @@ console.log("Existe x antes do bloco? ", x)
 }
 
 console.log("Existe x depois do bloco? ", x)
+
+/* 
+Scope let e const
+
+Diferentemente de var, const e let são variáveis com escopo local, ou seja, só são visíveis no escopo onde foram criadas e em escopos interiores ao de criação. Em uma variável let, porém, pode-se alterar o valor em um escopo e o valor irá persistir no escopo de criação.
+
+*/
+
+// console.log('> existe y antes do bloco? ', y)
+// O y não existe no escopo global. Apenas no local
+
+{
+  let y = 0
+  console.log('> existe y? ', y)
+}
+
+// console.log('> existe y depois do bloco? ', y)
+// O y não existe no escopo global. Apenas no local
+
+let z = 1
+
+{
+  z = 0
+  console.log('> existe z? ', z)
+  // Aqui ele procura o z. Ele sobe de escopo em escopo e atualiza o valor de z
+  // Se a variável criada for const, ela não irá mudar
+}
+
+console.log('> existe z depois do bloco? ', z)
+// O valor de z foi atualizado
+
+
+const w = 2
+
+{
+  const w = 0
+  console.log('> existe w? ', w)
+  // Aqui foi criada uma nova variável de escopo local. E não será atualizado o valor de w na variável global (criada fora do bloco)
+}
+
+console.log('> existe w depois do bloco? ', w)
+// Aqui o valor impresso será o da variável global (criada fora do bloco)
+
+// Por isso que o var não é mais tão utilizado, pois ele é muito flexível e pode ser alterado de várias formas diferentes dependendo do escopo que ela está. 
+// Esse é um dos perigos de se usar o var, ele permite alteração em diferentes escopos, o que causa bugs inesperados
