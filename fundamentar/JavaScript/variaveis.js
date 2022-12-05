@@ -118,3 +118,51 @@ console.log('> existe w depois do bloco? ', w)
 
 // Por isso que o var não é mais tão utilizado, pois ele é muito flexível e pode ser alterado de várias formas diferentes dependendo do escopo que ela está. 
 // Esse é um dos perigos de se usar o var, ele permite alteração em diferentes escopos, o que causa bugs inesperados
+
+/*
+Nomeando variáveis
+
+Para nomearmos variáveis corretamente e de um jeito inteligente, precisamos saber de algumas coisas, como: JavaScript é case-sensitive (sensível à letras maiúsculas e minúsculas) e aceita a cadeia de caracteres Unicode, podendo receber acentuações. 
+
+Em um nome de variável em JS você pode: 
+- Iniciar com caracteres especiais, 
+- iniciar com letras e 
+- colocar acentos, 
+- lembrando sempre que letras maiúsculas e minúsculas fazem a diferença. 
+
+Em contraste, você não pode: 
+- Iniciar com números e 
+- colocar espaços vazios. 
+
+Idealmente você deve colocar nomes significativos, que fazem sentido na aplicação, explicando o que a variável é, usando camel case, onde a primeira palavra de uma frase é toda minúscula, e as subsequentes não se separam por espaço e tem a primeira letra maiúscula, por exemplo: oNomeDessaVariável, e usar nomes em inglês.
+
+*/
+
+let Álisson
+let Alisson
+let alisson
+let álisson
+// Em todos esses casos o JS aceita a criação de variáveis
+
+// let 123alisson
+// Nesse caso não é aceito
+
+let $varCriada
+let criando_variavel
+let criandoVariavel
+// Ok 
+
+// É sempre bom criar nomes que façam sentido
+let n1
+// Foi possível criar a variável. Mas quando for necessário dar manutenção ao código, vai ser muito difícel saber o que esse n1 significa
+
+// Ex: ao inves de criar
+let c
+// podemos criar 
+let celsius
+
+// nomes de variaveis que fazem sentido são preferíveis. Ex:
+let name 
+// Mudar para 
+let checkIfNameExist
+// Aqui sabemos que o objetivo da variável é verificar se existe algum nome na variável checkIfNameExist
