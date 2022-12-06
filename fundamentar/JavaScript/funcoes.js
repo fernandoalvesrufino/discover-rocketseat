@@ -170,3 +170,40 @@ sayMyName(
 )
 
 // Isso nada mais é do chamar uma função dentro de outra função 
+
+
+/*
+- Funções construtoras
+
+Funções construtoras são utilizadas para criar novos objetos e geralmente tem a sua primeira letra maiúscula, todos com as mesmas características que são criadas na função, usando a palavra reservada this para se referir ao objeto sendo criado, por exemplo:
+*/
+
+// Colocar o maiúsculo não é obrigatório, mas é uma boa prática pois já temos diversas funções construtoras. Ex:
+let nome = new String('Fernando')
+console.log(nome)
+
+
+// Criando uma função construtora
+function Person(name) {
+	this.name = name
+	this.walk = function() {
+		return this.name + " está andando"
+	}
+}
+
+// Isso se chama instanciar um objeto
+const fernando = new Person("Fernando")
+const joao = new Person("João")
+
+// fazer isso é melhor que criar um objeto em si porque agora basta alterar o código da função construtora e iremos alterar tanto a variável fernando quando a variável joao
+
+console.log(fernando)
+console.log(fernando.walk())
+console.log(joao)
+console.log(joao.walk())
+
+/*
+- expressão new
+- criar um novo objeto
+- this keyword
+*/
