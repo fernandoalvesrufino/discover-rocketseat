@@ -88,3 +88,20 @@ function fazerSuco(fruta1, fruta2) {
 
 const copo = fazerSuco('banana', 'maça')
 console.log(copo)
+
+/*
+- function scope
+
+Parâmetros, mesmo se tiverem o mesmo nome que alguma outra variável do seu código, são apenas modificados e persistem no escopo da função.
+*/
+
+let subject = 'create video'
+
+function createThink(subject) {
+  // Essa variável é diferente da criada fora da função
+  subject = 'study'
+  return subject
+}
+
+console.log(subject)
+console.log(createThink(subject))
