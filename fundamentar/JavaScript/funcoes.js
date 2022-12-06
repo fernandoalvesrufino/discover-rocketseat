@@ -105,3 +105,68 @@ function createThink(subject) {
 
 console.log(subject)
 console.log(createThink(subject))
+
+/*
+- Function Hoisting
+
+O JavaScript possui function hoisting, permitindo que uma função seja declarada depois de ser utilizada, pois faz algo similar a elevar no código declarações de funções. Porém isso não acontece dentro de variáveis.
+*/
+
+// sayMyName()
+
+// É como se o JS colocasse a função no topo (hoisting)
+// function sayMyName() {
+//   console.log('Fernando')
+// }
+
+/* 
+O mesmo não ocorreria se no lugar eu criasse uma variável que recebesse uma função anônima. Ex:
+
+const sayMyName = function (){
+  console.log('Fernando')
+}
+
+Aqui teriamos um erro de referência
+*/
+
+
+/*
+- Arrow function
+
+Também podemos escrever funções expression de uma maneira mais compacta, desta maneira: 
+
+() => { 
+  código a ser executado 
+}
+
+Essa é uma maneira mais moderna de se escrever funções anônimas
+*/
+
+// const sayMyName = () => {
+//   console.log('Fernando')
+// }
+// Geralmente atribuimos arrow functions para uma constante const
+
+// sayMyName()
+
+/*
+- callback function
+
+Uma callback function é uma função que está sendo passada para outra função como parâmetro.
+*/
+
+function sayMyName(name) {
+  console.log('Antes de executar a calback')
+
+  name()
+
+  console.log('Depois de executar a callback')
+}
+
+sayMyName(
+  () => {
+    console.log('Estou em uma callback')
+  }
+)
+
+// Isso nada mais é do chamar uma função dentro de outra função 
