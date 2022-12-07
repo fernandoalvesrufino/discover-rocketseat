@@ -42,4 +42,27 @@ console.log(word.length)
 
 let numero = 1234
 console.log(numero.length) // Aqui teremos um resultado undefined porque não é possível contar quantidade de números. Mas podemos contar caracteres em uma string. Assim, basta converter, como a seguio:
+
 console.log(String(numero).length)
+
+/*
+- Casas decimais
+
+Para determinar uma quantia de casas decimais de um número pode-se usar o método toFixed() colocando como argumento quantas casas decimais o número terá. Para mudar a formatação do número de separado por ponto para separado por vírgula é possível usar o método replace(".", ","). O resultado final será do tipo string, e a conversão para o tipo número não será possível por que a vírgula não é considerada parte de um número.
+
+*/
+
+
+let novoNumero = 239.1242334
+console.log(novoNumero.toFixed(2))
+console.log(novoNumero.toFixed(2).replace('.', ',')) // O resultado será uma string
+
+/*
+- Maiúsculas e minúsculas
+
+Para transformar uma string em letras maiúsculas pode-se usar o método toUpperCase(), e ao contrário, também é possível usar o toLowerCase() para transformar uma string em todas letras minúsculas.
+*/
+
+let frase = "Programar é muito bacana!"
+console.log(frase.toLocaleUpperCase()) // maiúsculas
+console.log(frase.toLocaleLowerCase()) // minúsculas
