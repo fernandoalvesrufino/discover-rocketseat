@@ -124,3 +124,41 @@ Para transformar uma string em um array, pode-se usar o objeto Array com o méto
 
 let newString = "Manipulação"
 console.log(Array.from(newString)) // Aqui, cada caractere irá virar um elemento do array
+
+/*
+- Manipulando Arrays
+
+Existem várias maneiras de manipular arrays, como: o método push(), que adiciona um elemento no final do array, o método unshift(), que adiciona um elemento no começo do array, o método pop(), que retira um elemento do final do array, o método shift(), que retira um elemento do começo do array, o método slice(), que recebe como argumentos a posição de início e a posição do fim da parte que você quer selecionar, e retorna os valores destas posições, o método splice(), que recebe como argumentos a posição de início e a quantidade de elementos que você quer remover e o método indexOff(), que encontra o index do valor que recebe como argumento em um array.
+
+*/
+
+let techs = ["html", "css", "js"]
+
+// Adiciona um item no fim (Modifica o Array)
+techs.push("node.js")
+console.log(techs)
+
+// Adicionar no começo (Modifica o Array)
+techs.unshift("sql")
+console.log(techs)
+
+// Remover do fim (Modifica o Array)
+techs.pop()
+console.log(techs)
+
+// Remover do começo (Modifica o Array)
+techs.shift()
+console.log(techs)
+
+// Pegar somente alguns elementos do array (Retorna o que estou pedindo)
+console.log(techs.slice(1, 3))
+// o primeiro valor é referente a posição do elemento que quero e o segundo valor é até onde desejo que ele conte (começando a contar o elemento a partir de 1)
+
+// Remover 1 ou mais itens em qualquer posição do array (Modifica o Array)
+// techs.splice(1, 2)
+// primeiro valor se refere ao index ou posição do elemento e o segundo até onde desejo que seja removido
+// console.log(techs)
+
+// Encontrar a posição de um elemento no array
+let index = techs.indexOf('css')
+console.log(index)
