@@ -115,3 +115,12 @@ console.log(['a',
   {type: 'array'},
   function() { return 'Alô'},
 ].length)
+
+/*
+- Strings para array
+
+Para transformar uma string em um array, pode-se usar o objeto Array com o método from(), passando como argumento a string a ser transformada em array. Por exemplo console.log(Array.from("developer").
+*/
+
+let newString = "Manipulação"
+console.log(Array.from(newString)) // Aqui, cada caractere irá virar um elemento do array
