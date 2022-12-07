@@ -66,3 +66,18 @@ Para transformar uma string em letras maiúsculas pode-se usar o método toUpper
 let frase = "Programar é muito bacana!"
 console.log(frase.toLocaleUpperCase()) // maiúsculas
 console.log(frase.toLocaleLowerCase()) // minúsculas
+
+/*
+- Separando strings
+
+Para separar um texto por espaços, pode-se usar o método split(" "), que transforma o texto em um array de strings baseado no argumento, que no caso são os espaços. Para juntar esse array é possível usar o método join('"), que juntaria essas palavras sem nenhum separador, porém colocando um argumento, no caso um underscore ( join("_") ) as palavras são juntadas com o argumento de separador.
+*/
+
+let sentence = "Eu quero viver o amor!"
+let mySentence = sentence.split(" ")
+// O método split vai separar a string pelos caracteres que eu definir e colocar em um array
+console.log(mySentence)
+
+let sentenceWithUnderscore = mySentence.join("_")
+// Vai juntar todos os elementos da lista e colocar um _ entre ele, e transformar tudo em uma string
+console.log(sentenceWithUnderscore)
