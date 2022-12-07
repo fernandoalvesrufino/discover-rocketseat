@@ -81,3 +81,12 @@ console.log(mySentence)
 let sentenceWithUnderscore = mySentence.join("_")
 // Vai juntar todos os elementos da lista e colocar um _ entre ele, e transformar tudo em uma string
 console.log(sentenceWithUnderscore)
+
+/*
+- Encontrando ´palavras em frases
+
+Para verificar se um texto possui uma palavra específica, podemos usar o método includes(), passando como argumento a palavra a ser verificada, que retorna um valor true se encontrar a palavra, e falso se não, lembrando sempre que o método é case sensitive.
+
+*/
+console.log(sentence.includes("viver")) // true
+console.log(sentence.includes("amar")) // false
