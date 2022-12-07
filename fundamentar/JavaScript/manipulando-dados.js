@@ -90,3 +90,23 @@ Para verificar se um texto possui uma palavra específica, podemos usar o métod
 */
 console.log(sentence.includes("viver")) // true
 console.log(sentence.includes("amar")) // false
+
+/*
+- Criando array com construtor
+
+Para criar um array com um método construtor, usa-se new Array(args), passando como argumento o tamanho deste vetor ou os valores, por exemplo: const array = new Array("a", "b", "c").
+
+*/
+
+let myArray = new Array ('a', 'b', 'c')
+console.log(myArray)
+
+let myNewArray = new Array(10)
+console.log(myNewArray) // Será criado um array com 10 posições vazias
+
+/*
+- Elementos do Array
+
+Para contar a quantidade de elementos em um array pode-se usar o método length.
+
+*/
