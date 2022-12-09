@@ -325,3 +325,76 @@ const niceBreakfast = pao && queijo ? 'Café top' : 'Café ruim'
 // Cafe da manhã top = se tiver pao e queijo (true) então 'Café top', senão 'Café ruim'
 
 console.log(niceBreakfast)
+
+/*
+- Operadores para string
+
+Temos também os string operators, os operadores de string, e nós até já vimos um desses antes, o comparison operator, ou ==, para os mais íntimos.
+
+Agora vamos ver sobre a concatenação, que é o retorno da união de duas strings.
+
+Seu símbolo é o de + (positivo), e seu uso é simples, algo próximo de:
+
+*/
+
+console.log('a' + 'a')
+// nesse caso, o retorno da string seria aa.
+
+let alpha = 'alpha'
+console.log(alpha + 345)
+// Sempre que o JS identificar que em um lado há uma string, ele irá concatenar e o resultado será uma string
+
+/*
+- Falsy e truthy
+
+O falsy é quando um valor é considerado falso em contextos que onde um booleano é obrigatório (condicionais e loops), exemplo a seguir:
+
+
+	Todos os valores abaixo seriam representados como false em um boolean.
+		false
+    0
+    -0
+    ""
+    null
+    undefined
+    NaN
+*/
+
+console.log( NaN ? 'verdadeiro' : 'falso' )
+
+/* 
+já o truthy é o oposto, quando um valor é considerado verdadeiro (true) em contextos onde um booleano é obrigatório (condicionais e loops), exemplo a seguir:
+
+	Todos os valores abaixo seriam representados como false em um boolean.
+		true
+    {}
+    []
+    1
+    3.23
+    "0"
+    "false"
+    -1
+    Infinity
+    -Infinity
+*/
+
+console.log( Infinity ? 'verdadeiro' : 'falso' )
+
+/*
+Precedência de operadores
+
+Nesta aula mostraremos a precedência dos operadores, ou seja, a ordem de importância de cada um deles.
+
+// De cima para baixo, do mais importante ao menos importante.
+
+* grouping                      ( )
+* negação e incremento          ! ++ --
+* multiplicação e divisão       * /
+* adição e subtração            + -
+* relacional                    < <= > >=
+* igualdade                     == != === !==
+* AND                           && 
+* OR                            ||
+* condicional                   ?:
+* assignment (atribuição)       = += -= *= %= 
+*/
