@@ -101,3 +101,74 @@ console.log(typeof person)
 console.log(person)
 delete person.age // Deletando a propriedade age
 console.log(person)
+
+/*
+- Operadores aritméticos
+
+Falaremos nessa aula sobre operadores aritméticos, que nos possibilitam fazer cálculos matemáticos.
+
+O operador de multiplicação é o * (asterisco);
+
+O operador de divisão é a / (barra);
+
+O operador de soma é o + (positivo);
+
+O operador de subtração é o - (negativo).
+
+Outros operadores aritméticos incluem o resto de divisão, incremento, decremento e exponencial, com exemplos a seguir:
+
+- resto da divisão: sinal %
+let remainder
+remainder = 11 % 9
+console.log(remainder)
+
+- incremento: sinal ++
+let increment = 0
+
+console.log(++increment)
+console.log(increment)
+
+- decremento: sinal -- 
+let decrement = 0
+decrement--
+console.log(decrement)
+
+- exponencial: sinal ** 
+console.log(2 ** 3)
+*/
+
+// multiplicação
+console.log(3.2 * 5.5)
+
+// Divisão
+console.log(12 / 2)
+
+// Soma
+console.log(34 + 67)
+
+// Subtração
+console.log(34 - 23)
+
+// Resto da divisão
+let remainder
+remainder = 11 % 11
+console.log(remainder)
+remainder = 11 % 10
+console.log(remainder)
+
+// Incremento
+let increment
+increment = 0
+console.log(increment)
+increment++
+console.log(increment)
+// Existe diferença entre incrementar um valor antes e incrementar depois
+// Ex: ++incrementar
+
+// Decremento
+let decrement = 0
+--decrement
+console.log(decrement)
+
+// Exponencial
+console.log(3 ** 3) // 3 elevado a 3
