@@ -1,5 +1,5 @@
 /*
-Expressões e operadores
+- Expressões e operadores
 
 Nas próximas aulas, falaremos sobre expressões e operadores.
 
@@ -48,3 +48,56 @@ console.log (true ? 'alo' : 'nada') // se verdadeira executa a primeira express�
 console.log (false ? 'alo' : 'nada') // se falso executa a segunda expressão
 
 
+/*
+- New
+
+A expressão new, também denominada como left-hand-side expression, serve para criar um novo objeto usando as funções construtoras que temos por padrão no JavaScript.
+
+Um exemplo de seu uso é:
+
+let date = new Date('2020-12-01')
+console.log(date.__proto__)
+*/
+
+let name = new String('Fernando') // O new fará com que a variável criada seja um novo objeto
+name.surName = 'Rufino'
+let age = new Number(26)
+console.log(name, age)
+console.log(name.surName, age)
+
+let date = new Date("2022-12-09")
+console.log(date)
+console.log(date.__proto__)
+
+/*
+- Typeof delete
+
+Em operadores unários, os mais comuns são o typeof e o delete, onde o typeof serve para saber o tipo de dado que temos na expressão, e o delete vai deletar alguma propriedade de um objeto, desde que ela exista.
+
+Exemplos de uso:
+
+- delete 
+const person = {
+  name: 'Mayk',
+  age: 25,
+}
+delete person.age
+
+console.log(person)
+Nesse caso estamos deletando a propriedade age do objeto person.
+
+console.log(tyepof "mayk")
+Aqui vemos qual o tipo de dado que temos, nesse caso uma string.
+*/
+
+console.log(typeof "Fernando")
+
+const person = {
+  name: 'Mayk',
+  age: 25,
+}
+
+console.log(typeof person)
+console.log(person)
+delete person.age // Deletando a propriedade age
+console.log(person)
