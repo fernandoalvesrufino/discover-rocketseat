@@ -172,3 +172,114 @@ console.log(decrement)
 
 // Exponencial
 console.log(3 ** 3) // 3 elevado a 3
+
+/*
+- Grouping operator
+
+Vamos falar sobre um operador que agrupa expressões, os parênteses.
+
+Na matemática, temos uma noção de precedência, onde certos operadores têm de ser realizados primeiro, e não é diferente para um computador, porém, podemos utilizar os parênteses para realizar o agrupamento de alguns operadores, que moverá a precedência do cálculo.
+
+let total = 2 + 3 * 5
+console.log(total)
+//com essa precedência, nosso resultado é 17.
+
+let total = (2 + 3) * 5
+console.log(total)
+// o cálculo mudou a precedência, fazendo nosso resultado tornar-se 25.
+*/
+
+let total = 2 + 3 * 5
+console.log(total)
+
+total = (2 + 3) * 5
+console.log(total)
+
+/*
+- Operadores de comparação igual a e diferente de
+*/
+
+let one = 1 // A variável one recebe 1
+let two = 2
+
+// == Igual a 
+console.log(two == 1) // two é igual a 1?
+console.log(one == "1")
+
+// != Diferente de
+console.log(one != two)
+console.log(one != 1)
+console.log(one != "1")
+
+/*
+- Operadores de comparação estritamente igual e estritamente diferente
+
+Compara os valores e o tipo do elementos
+*/
+
+// === estritamente igual a
+console.log(one === "1") // false
+console.log(one === 1) // true
+
+// === estritamente diferente de
+console.log(two !== "2") // true
+console.log(two !== 2) // false
+
+
+/*
+- Operadores de comparação maior e menor (igual)
+*/
+
+// > Maior que
+console.log(one > two) // false
+
+// >= Maior igual a
+console.log(one >= 1) // true
+console.log(two >= 1) // true
+
+// < Menor que
+console.log(one < two) // true
+
+// <= Maior igual a
+console.log(one <= two) // true
+console.log(two <= 1) // true
+console.log(two <= 0) // false
+
+/*
+- Atribuição
+*/
+
+// Veremos nesta aula sobre operadores de atribuição. Quando falamos em atribuição, queremos na verdade dizer assignment, que já vimos bastante, mas podemos também realizar diferentes tipos de atribuição, usando operadores aritméticos.
+
+// Exemplos:
+
+// Operadores de atribuição (Assignment)
+let x
+console.log(x) // undefined
+
+// assignment normal:
+x = 1
+
+// addition assignment (adição):
+x += 2 // x = x + 2
+console.log(x) 
+
+// subtraction assignment (subtração):
+x -= 1
+console.log(x) 
+
+// multiplication assignment (multiplacação):
+x *= 2
+console.log(x) 
+
+// division assignment (divisão):
+x /= 2
+console.log(x) 
+
+// exponetiation assignment (exponenciação):
+x **= 2
+console.log(x) 
+
+// remainder assignment (resto de divisão):
+x %= 2
+console.log(x) 
