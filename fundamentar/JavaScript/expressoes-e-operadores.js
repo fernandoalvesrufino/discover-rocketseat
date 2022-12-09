@@ -283,3 +283,45 @@ console.log(x)
 // remainder assignment (resto de divisão):
 x %= 2
 console.log(x) 
+
+/*
+Operadores lógicos
+*/
+
+// 2 valores lógicos booleanos que, quando verificados, resultarão em verdadeiro ou falso
+
+// AND &&
+console.log(true && true) // true
+console.log(true && false) // false
+console.log(false && true) // false
+console.log(false && false) // false
+
+// OR ||
+console.log(true || true) // true
+console.log(true || false)// true
+console.log(false || true) // true
+console.log(false || false) // false
+
+// NOT !
+console.log(!false) // true
+console.log(!true) // false
+
+/*
+- Operador condicional ternário
+*/
+
+// Os operadores ternários, conhecidos como operadores de condição, como o nome sugere, são dependentes de condições e podem entregar valores diferentes com base nelas.
+
+// Funciona da seguinte forma;
+
+// condição ? valor1 : valor2
+// Exemplo de uso:
+
+// Café da manhã top
+let pao = true
+let queijo = false
+
+const niceBreakfast = pao && queijo ? 'Café top' : 'Café ruim'
+// Cafe da manhã top = se tiver pao e queijo (true) então 'Café top', senão 'Café ruim'
+
+console.log(niceBreakfast)
