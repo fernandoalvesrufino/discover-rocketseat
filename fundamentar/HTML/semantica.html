@@ -10,7 +10,7 @@ Também é importante para acessibilidade, pense em alguém que use um leitor de
 
 Além disso, os motores de busca dão preferência à sites que têm sua semântica em dia, portanto um site bem estruturado é um site melhor encontrado na web. -->
 
-<!-- ----------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------->
 
 <!-- Importância das tags HTML semânticas
 
@@ -28,9 +28,85 @@ não para memorizar soluções.
 <blockquote>
 Nós (programadores) somos pagos para resolver problemas,
 não para memorizar soluções.
-												 <cite>─ Mayk Brito</cite>
+<cite> ─ Mayk Brito</cite>
 </blockquote>
 
 <!-- Algumas coisas para se ter em mente, é que como autor da página, é sua responsabilidade entender os significados dos elementos, e muitas vezes isso é simples, já que o html não possui um leque gigante de elementos, mas algumas vezes é muito complexo de se entender alguns elementos. Alguns elementos precisaremos usar em todo documento que criarmos, enquanto alguns provavelmente nunca serão usados.
 
 O foco do HTML5 é melhorar a semântica, e nós sempre buscaremos regras e padrões para aprimorar a estrutura do documento. -->
+
+<!-------------------------------------------------------------------------------------------------------->
+
+<!-- Seções comuns
+
+Além de trabalhar com textos e links no HTML, temos que sempre pensar na estrutura que colocamos no HTML, mas conforme formos crescendo no nosso entendimento, melhor vai sendo nossa estrutura.
+
+Podemos entender algumas estruturas comuns do HTML, por isso vamos falar sobre essas seções comuns que temos entre documentos, mas atenção que nem todas as páginas vão ter todas essas seções.
+
+Cabeçalho <header> :
+O cabeçalho do nosso site, o local onde geralmente fica a logo e o menu.
+
+Navegação <nav> :
+A navegação do site vai oferecer links para seções do site, o nosso menu costuma ficar dentro da header, porém pode ficar em outros lugares, como em uma parte lateral, ou na parte de baixo.
+
+Conteúdo principal <main> :
+A parte do site aonde vai o conteúdo principal, no caso de um blog, teremos vários artigos, vários posts.
+
+Conteúdo relacionado <aside>:
+O conteúdo relacionado é algo que seja relacionado levemente ao nosso conteúdo principal, porém não tanto para ficar lá.
+
+Rodapé <footer>
+Onde ficam as informações da parte de baixo da página.
+
+Exemplo básico de como ficaria um HTML semântico:
+ -->
+<body>
+	<header>
+		logomarca
+		<nav>
+			<ul>
+				<li>item</li>
+				<li>item</li>
+				<li>item</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		conteúdo principal
+	</main>
+		
+	<aside>
+		parte lateral
+	</aside>
+
+		<footer>rodapé</footer>
+</body>	
+		
+		
+<!-- Você pode perceber que não está ordenado, como no desenho que o Mayk fez, porém, isso é de ser esperado, já que o HTML trabalha apenas com a parte de informação do nosso site, enquanto o visual fica todo com o CSS. -->
+
+
+<!------------------------------------------------------------------------------------------------------->
+
+<!-- 
+	HEADER
+	
+Vamos falar um pouco mais desse elemento estrutural e semântico que é o header. Primeiramente, não confunda o header com o head, são parecidos apenas na escrita, mas um possui er no final, então fique atento.
+
+Primeiramente, quando no início de uma página, é visto como uma header global, mas também pode ser usado em outros elementos semânticos como article, section, entre outros.
+
+Não use um header dentro de um header, nem dentro de um footer, isso quebra a semântica, a ideia do header.
+
+Você também pode usar múltiplos headers, e ele não possui atributos específicos, apenas atributos globais, que são aplicáveis a todas as outras tags. O header também vai ocupar toda a linha na qual for aplicado -->
+
+
+<!------------------------------------------------------------------------------------------------------->
+
+<!-- NAV
+
+A tag Nav, esse elemento de navegação, vai servir para representar uma seção da nossa página que vai apontar para outras páginas, geralmente é usada dentro da header, e não necessariamente devam todos os links de sua página estar dentro de uma tag nav, é mais destinada para coisas importantes do site.
+
+Porém, você pode sim ter mais de um nav na sua página, mas pense bem onde você vai deixar esse nav, já que ele é destinado a coisas importantes e especiais da página.
+
+A tag nav não possui atributos específicos, apenas os globais. -->
