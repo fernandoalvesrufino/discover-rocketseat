@@ -60,7 +60,7 @@ Onde ficam as informações da parte de baixo da página.
 
 Exemplo básico de como ficaria um HTML semântico:
  -->
-<body>
+<!-- <body>
 	<header>
 		logomarca
 		<nav>
@@ -81,7 +81,7 @@ Exemplo básico de como ficaria um HTML semântico:
 	</aside>
 
 		<footer>rodapé</footer>
-</body>	
+</body>	 -->
 		
 		
 <!-- Você pode perceber que não está ordenado, como no desenho que o Mayk fez, porém, isso é de ser esperado, já que o HTML trabalha apenas com a parte de informação do nosso site, enquanto o visual fica todo com o CSS. -->
@@ -89,8 +89,7 @@ Exemplo básico de como ficaria um HTML semântico:
 
 <!------------------------------------------------------------------------------------------------------->
 
-<!-- 
-	HEADER
+<!-- 	HEADER
 	
 Vamos falar um pouco mais desse elemento estrutural e semântico que é o header. Primeiramente, não confunda o header com o head, são parecidos apenas na escrita, mas um possui er no final, então fique atento.
 
@@ -110,3 +109,93 @@ A tag Nav, esse elemento de navegação, vai servir para representar uma seção
 Porém, você pode sim ter mais de um nav na sua página, mas pense bem onde você vai deixar esse nav, já que ele é destinado a coisas importantes e especiais da página.
 
 A tag nav não possui atributos específicos, apenas os globais. -->
+
+<!------------------------------------------------------------------------------------------------------->
+
+<!-- MAIN 
+
+A tag main é para um conteúdo único da sua página, portanto, você vai utilizá-la apenas uma vez por página, e vai ser colocada direto do body, e não é legal deixar em qualquer outro lugar além de logo depois do body, entendemos a tag main como o foco central da página, o conteúdo principal da aplicação, então geralmente dentro dessa tag, não vamos deixar o nosso menu.
+
+Exemplo de um main adequado, de uma página de receitas: -->
+
+<body>
+
+    <main>
+        <h1>Receitas</h1>
+        <p>Essa é uma página de receitas</p>
+
+        <article>
+            <h2>Receita de torta de maçã</h2>
+            <p>Essa é uma receita de torta de maçã</p>
+        </article>
+
+        <article>
+					<h2>Receita de torta de limão</h2>
+					<p>Essa é uma receita de torta de maçã</p>
+        </article>
+    </main>
+</body>
+
+<!-- Essa estruturação semântica vai nos ajudar com a nossa própria organização, com o nosso CSS, com o Javascript, com o motor de buscas, acessibilidade, entre outros.
+	
+	A tag main não possui atributos específicos, somente os globais -->
+
+<!------------------------------------------------------------------------------------------------------->
+
+<!-- ARTICLE
+	
+A tag article vai criar blocos de conteúdo que estejam relacionados.
+		
+No caso do nosso exemplo, teremos receitas, mas também poderia ser de posts de um blog, fotografias, vai depender de o que seu site está fazendo.
+
+A tag article não possui atributos específicos, somente os globais.
+-->
+
+<!------------------------------------------------------------------------------------------------------->
+
+<!-- ASIDE
+	
+	A tag aside é para conteúdos levemente relacionados ao conteúdo principal, como explicações do conteúdo, glossários, links extras, biografia do autor, informações de perfil e etc.
+	
+	É uma tag fácil de se entender, porém fácil de se confundir, então evite atribuir a tag aside ao lado da página conforme você for aprendendo mais sobre HTML, CSS.
+-->
+
+<!------------------------------------------------------------------------------------------------------->
+
+<!-- FOOTER
+
+A tag footer é bem tranquila de se entender, ela fica no final da página e vai geralmente ter informações do autor da página, copyright, contato, sitemap, voltar ao topo, são algumas das coisas que aparecem geralmente no footer.
+
+Abaixo um exemplo de como seria um HTML com footer:
+
+<article>
+    <h1>Sobre nós</h1>
+    <p>Formamos um time de profissionais: </p>
+
+    <ol>
+        <li>Capacitados</li>
+        <li>Gentis</li>
+        <li>Honestos</li>
+        <li>Gentils</li>
+    </ol>
+
+    <h2>Quem são</h2>
+    <ul>
+        <li>Harry Hair</li>
+        <li>Dora Depiladora</li>
+        <li>Massoterapeuta Massa</li>
+        <li>Esteticista Ciça</li>
+        <li>Pedo Curi</li>
+        <li>Bárbara Brabeira</li>
+        <li>Cecília (para seus cílios)</li>
+    </ul>
+
+</article>
+
+<footer>
+    <p>© 2020 Cabeleleila Leila</p>
+</footer>
+
+o footer aqui pode ficar tanto dentro quanto fora do article. OBS: Ele pode ficar dentro se apenas esse conteudo de article for apresentado
+
+A tag footer não possui atributos específicos, somente os globais.-->
