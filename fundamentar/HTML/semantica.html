@@ -181,21 +181,62 @@ Abaixo um exemplo de como seria um HTML com footer:
 
     <h2>Quem são</h2>
     <ul>
-        <li>Harry Hair</li>
+			<li>Harry Hair</li>
         <li>Dora Depiladora</li>
         <li>Massoterapeuta Massa</li>
         <li>Esteticista Ciça</li>
         <li>Pedo Curi</li>
         <li>Bárbara Brabeira</li>
         <li>Cecília (para seus cílios)</li>
-    </ul>
+			</ul>
 
-</article>
-
-<footer>
+		</article>
+		
+		<footer>
     <p>© 2020 Cabeleleila Leila</p>
-</footer>
+	</footer>
 
-o footer aqui pode ficar tanto dentro quanto fora do article. OBS: Ele pode ficar dentro se apenas esse conteudo de article for apresentado
+	o footer aqui pode ficar tanto dentro quanto fora do article. OBS: Ele pode ficar dentro se apenas esse conteudo de article for apresentado
+	
+	A tag footer não possui atributos específicos, somente os globais.-->
+	
+	<!------------------------------------------------------------------------------------------------------->
+	
+	<!-- SECTION
+	
+	A tag section serve para colocarmos seções na nossa página HTML, e uma dica de ouro: 
+	- Geralmente se coloca um título e conteúdo na tag section. 
+	
+	Antigamente usava-se uma div para fazer essas divisões e seções de conteúdos, mas semanticamente é mais apropriado usar uma tag section. Exemplo de uso a seguir:
 
-A tag footer não possui atributos específicos, somente os globais.-->
+<main>
+    <h1>Receita 1</h1>
+    <p>descrição da receita</p>
+
+    <section>
+        <h2> Modo de preparo</h2>
+        <p>Modo de preparo</p>
+    </section>
+	</main>
+A tag section pode ser usada dentro de um article, e não possui atributos específicos, somente os globais.-->
+
+
+<!------------------------------------------------------------------------------------------------------->
+
+<!-- Elementos genéricos não semânticos
+
+Escrever HTML semântico é algo que leva tempo, e precisa de muita prática para fazer com que o HTML tenha maior significado. Temos dois elementos não semânticos para uso genérico, um para bloco e outro para texto, sendo esses o div e o span.
+
+Em ambas as situações nós usaremos atributos globais como id e class para entregar um maior significado.
+
+O span é usado quando não se acha um elemento de texto semântico, já o div, quando não se acha um elemento de bloco semântico.
+
+Um exemplo de uso do span é caso queira dar um destaque no texto, mas não queira usar a tag strong, algo parecido com:
+
+<h1>Título <span class="destaque">destacado</span></h1>
+Um exemplo do uso de div semântico:
+
+<div class="cart">
+    <h2>Carrinho de compras</h2>
+</div>
+-->
