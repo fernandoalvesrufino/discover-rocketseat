@@ -42,3 +42,21 @@ while(i > 10){
 
   i /= 50
 }
+
+
+// for...of
+
+// Cria um loop através de alguma variável que tivermos previamente
+
+let name = 'Fernando'
+let names = ['João', 'Pedro', 'Paulo']
+
+// Para cada caracter do nome
+for (let char of name) {
+  console.log(char)
+}
+
+// Para cada elemento de nomes
+for (let name of names) {
+  console.log(name)
+}
