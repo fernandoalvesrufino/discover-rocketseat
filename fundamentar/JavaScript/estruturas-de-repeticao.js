@@ -46,17 +46,33 @@ while(i > 10){
 
 // for...of
 
-// Cria um loop através de alguma variável que tivermos previamente
+// Cria um loop através de alguma variável que tivermos previamente (string, array...)
 
 let name = 'Fernando'
 let names = ['João', 'Pedro', 'Paulo']
 
-// Para cada caracter do nome
+// Para cada caracter DE nome
 for (let char of name) {
   console.log(char)
 }
 
-// Para cada elemento de nomes
+// Para cada elemento DE nomes
 for (let name of names) {
   console.log(name)
+}
+
+// for in
+
+// Cria um loop em cima de um objeto
+
+let person = {
+  name: 'Jhon',
+  age: 20,
+  weight: 82.3
+}
+
+// para cada propriedade EM person
+for (let property in person) {
+  console.log(property)
+  console.log(person[property])
 }
