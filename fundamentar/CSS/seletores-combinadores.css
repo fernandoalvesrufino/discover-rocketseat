@@ -99,3 +99,44 @@ Usamos uma separação por vírgulas para isso: */
 h1, p, .title, .title:hover {
 	color: red;
 }
+
+/* Combinadores, pois eles trabalham para buscar e combinar seletores a fim de aplicar uma estilização
+
+Descendant combinator
+Identificado por um espaço entre os seletores
+Busca um elemento dentro de outro, mesmo que existam outros elementos no caminho
+HTML
+
+Ex:
+*/
+
+/* <body>
+	<article>
+		<h2>Um Título</h2>
+	</article>
+</body>
+CSS
+
+body article h2 {
+	color: red;
+} */
+
+/* - Child combinator
+Identificado pelo sinal > entre dois seletores
+seleciona somente o elemento que é filho direto do pai
+Elementos depois do filho direto serão desconsiderados
+HTML
+
+Ex:
+
+<body>
+  <ul>
+    <li>Item 1</li>
+    <ul>
+      <li>Item 2</li>
+    </ul>
+  </ul>
+</body>
+body > ul > li {
+	color: blue;
+} */
