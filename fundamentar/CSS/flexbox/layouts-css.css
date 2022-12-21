@@ -1,0 +1,19 @@
+/*
+- Layouts e evolução
+
+Layout tem a ver com a maneira que os elementos estão distribuidos na tela
+
+
+- Normal flow
+
+Ou flow Layout que é a maneira que os elementos 'block' e 'inline' ficam na página
+
+Ex:
+<p>Texto block com <strong>inline</strong> dentro </p>
+>>> Aqui não há quebra de linha
+
+<div style="background: green">Outro texto</div>
+>>> Aqui temos um display block, onde o texto acima ocupa toda a linha
+
+- Por padrão temos elementos block e inline 
+*/
