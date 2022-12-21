@@ -1,0 +1,24 @@
+/* 
+- Flex container - Flex item e Nesting
+
+- Flex container 
+  - Flex item
+
+- Nesting 
+  Conceito onde elementos vivem dentro de outro elemento 
+
+_________________________________________________________
+
+- Eixo principal e cruzado
+- Axis
+  - main
+    -start, end 
+  - cross
+    - start, end
+
+__________________________________________________________
+
+- Flex sizing
+  - flexível
+  - altera width/height dos itens para preenchimento dos espaços do flex container
+*/
