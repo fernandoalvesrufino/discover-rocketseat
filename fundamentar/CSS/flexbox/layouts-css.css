@@ -35,3 +35,51 @@ Ex:
 
 ```
 */
+
+/* 
+- Tableless
+
+Uso das propriedades 'float', 'clear' para que os elementos possam mudar de posição na tela
+
+``` html
+<div style="float: left">esquerda</div>
+<div style="float: right">direita</div>
+<div style="clear: both">normal flow</div>
+```
+*/
+
+/* 
+- Flexbox
+
+A caixa se torna flex, fazendo com que os elementos internos possam receber melhor:
+
+- alinhamento 
+- ordenação 
+- tamanhos flexíveis
+
+``` html
+
+<head>
+  <style>
+    .flexbox {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .item:nth-child(1){
+      order: 1;
+    }
+    OBS: O elemento A foi para a ultima posição pois recebeu ordem de posicionamento 1, e os demais estão na ordem de posicionamento 0 
+  </style>
+</head>
+<body>
+  <div class="flexbox">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+  </div>
+</body>
+
+```
+*/
+
