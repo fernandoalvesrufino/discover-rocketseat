@@ -1,0 +1,75 @@
+<!-- header menu navegation -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Navegation</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    nav {
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo a {
+      font-weight: bolder;
+      text-decoration: none;  
+      color: black;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    
+    ul {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.8rem;
+      align-items: center;
+    }
+
+    ul li {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    button {
+      padding: 0.4rem 0.7rem;
+      background-color: rgb(55, 0, 128);
+      border-radius: 4px;
+      color: white;
+      border: 0px;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="#">LOGO</a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>SERVICES</li>
+        <li>TESTIMONIALS</li>
+      </ul>
+      <button>Contact</button>
+    </div>
+  </nav>
+  </body>
+  </html>
