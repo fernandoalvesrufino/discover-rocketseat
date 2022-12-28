@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imagem dentro de um botão</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      background-color: white;
+      border: 1px solid;
+      border-radius: 5px;  
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 1rem;
+    }
+
+    p {
+      margin: 0;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="logo github"><p>GitHub</p></button>  
+    <button><p>LinkedIn</p><img src="https://assets.stickpng.com/images/6297a2f1e01809629f113598.png" alt="logo linkedin"></button>  
+  </div>
+</body>
+</html>
