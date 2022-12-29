@@ -1,4 +1,4 @@
-console.log(global)
+// console.log(global)
 
 // Para saber mais: nodejs.org > docs > versão instalada > globals
 
