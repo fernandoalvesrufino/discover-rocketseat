@@ -12,5 +12,8 @@
     "npm"
   ],
   "author": "Fernando Rufino",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cfonts": "^3.1.1"
+  }
 }
