@@ -14,6 +14,7 @@
   "author": "Fernando Rufino",
   "license": "MIT",
   "dependencies": {
-    "cfonts": "^3.1.1"
+    "cfonts": "^3.1.1",
+    "moment": "^2.29.4"
   }
 }
