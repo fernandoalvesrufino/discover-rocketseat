@@ -12,3 +12,18 @@ console.log(jogadores.length) // 5
 for (let jogador of jogadores) {
   console.log(jogador)
 }
+
+// Adicionar um elemento
+jogadores.push('Butler')
+console.log(jogadores)
+
+// Encontrar um elemento
+const curry = jogadores.find(jogador => jogador === 'Curry')
+console.log(curry)
+// O find não é tão eficiente, pois se eu tiver 1.000.000 de elementos, ele vai rodar um por um, até encontrar o elemento em questão
+// Se ele não encontrar, irá retornar undefined
+
+// Deletar um elemento
+// Infelizmente também não é tão eficiente, pois ao deletar um elemento, ele irá realocar ou reposicionar todos os demais elementos
+jogadores.splice(1, 1) // Irá remover Doncic
+console.log(jogadores)
