@@ -14,3 +14,5 @@ Back (fundo) - é a referência do último elemento a entrar na fila
 
 - enqueue() = entrando na fila
 - dequeue() = saindo da fila
+
+<img src="./assets/queue.jpeg" alt="mapa mental queue">
