@@ -45,3 +45,41 @@ Vamos pensar nas coisas como um objeto. Como um smartphone, por exemplo. Ele tem
 
 > Nem todo objeto do mundo real fará parte do seu sistema
 > - Ex: Em um escritório, podemos desenvolver uma agenda. Mas não vamos criar um objeto papel, ou um objeto caneta.
+
+### Classes
+Funcionam como moldes para os objetos. Objetos e classes são diferentes, mas uma coisa depende da outra. 
+
+- Um objeto é criado a partir de uma classe.
+- Ex: Máquina de biscoito
+  - A maquina é a classe
+  - O biscoito é o objeto ou instância
+    - Instância significa que estamos criando um objeto através da classe
+
+### Classes em JS
+O conceito de classe em JS é diferente do conceito de uma linguagem que é completamente orientada à objetos.
+JS é multiparadigma
+Em JS os objetos são protótipos.
+
+```
+// definir classe
+class Pessoa {
+  constructor(nome){
+    this.id = ~~(Math.random() * 100000)
+    this.nome = nome
+  }
+}
+
+// criar objeto
+const pessoa = new Pessoa('fernando')
+```
+
+Mas o JS vai trazer muito mais funcionalidades do que somente essas 2 que foram colocadas.
+
+> Em um objeto puro de uma classe em Java so haveriam essas 2 propriedades criadas.
+
+Em JS já existe herança prototipal. Isso significa que le já vai puxar de outra classe acima dela, muitas outras propriedades e funcionalidades. 
+Um objeto herda de outro que herda de outra até chegar à classe pai.
+
+Ex: No exemplo citado anteriormente, a opção 'id' por ser um número, vai herdar tudo o que for de um número. E a opção 'nome' por ser string, vai herdar tudo de string.
+
+Aqui as classes são apenas maneiras bonitas de representar protótipos.
