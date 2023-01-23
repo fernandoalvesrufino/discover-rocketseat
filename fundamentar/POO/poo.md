@@ -20,3 +20,28 @@ Vamos pensar nas coisas como um objeto. Como um smartphone, por exemplo. Ele tem
 - Separar a complexidade do código
 - Abstrair o código
 - Classificar as rotinas e trechos do código
+
+## Conceitos
+
+> Uma boa fundamentação é essencial
+
+### Objetos
+- Uma caneta é um objeto
+- Todo objeto possui propriedades e funcionalidades
+  - propriedades = atributos
+  - funcionalidades = métodos ou comportamento
+  - estado = estado atual, muda dependendo de como o objeto está
+
+### Objetos: abstratos x mundo real
+- Mundo real
+  - Pessoa
+  - Aluno
+  - Produtp
+  - Carrinho de compras
+
+- Abstratos
+  - Autenticação (Ex.: Login no Facebook)
+  - Autorização
+
+> Nem todo objeto do mundo real fará parte do seu sistema
+> - Ex: Em um escritório, podemos desenvolver uma agenda. Mas não vamos criar um objeto papel, ou um objeto caneta.
