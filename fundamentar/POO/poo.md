@@ -115,3 +115,46 @@ class Poligono {
 
 let poligono = new Poligono(50, 60)
 ```
+
+## Programação Estruturada x Orientada à Objetos
+
+### Estruturada 
+
+- Processa a entrada e manipulação dos dados até a saída
+- Uso de sequências, estruturas de repetições e condições
+- Uso de uma rotina maior,ou sub-rotinas
+- Não existem restrições às variáveis
+
+### Orientada à Objetos
+
+- Surge para trazer um cuidado ao uso estruturado
+  - Não elimina por completo o uso estruturado
+- Conceitos como Objetos e Classes
+- Cuidados com variáveis e rotinas (encapsulamento)
+- Melhor reuso de código
+
+## Herança
+
+- Pais e filhos
+- Os objetos podem herdar, ou estender, características bases
+- Uma cópia de atributos e métodos de outra classe
+
+Exemplo:
+``` javascript
+class Veiculo {
+  rodas = 4;
+
+  mover(direcao){}
+  virar(direcao){}
+}
+
+class Moto extends Veiculo {
+  constructor() {
+    super() // Puxa atributos e metodos do pai
+    this.rodas = 2
+  }
+}
+```
+
+- Um objeto pode estender de outro objeto que pode estender de outro objeto e ai vai...
+- Fácil reutilização de código

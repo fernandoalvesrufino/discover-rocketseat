@@ -15,5 +15,6 @@ class Poligono {
 }
 
 let poligono = new Poligono(50, 60)
+
 console.log(poligono)
 console.log(poligono.area)
