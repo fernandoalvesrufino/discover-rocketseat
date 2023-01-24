@@ -158,3 +158,52 @@ class Moto extends Veiculo {
 
 - Um objeto pode estender de outro objeto que pode estender de outro objeto e ai vai...
 - Fácil reutilização de código
+
+## Polimorfismo
+
+- Polomorfismo significa "muitas formas".
+
+Quando um objeto estende de outro (herança), talvez haja a necessidade de reescrever uma ou mais características (atributos e métodos) nesse novo objeto.
+
+Temos o poder de recriar um método (ou mais) da classe herdada.
+
+> Ex: Digamos que criamos uma classe Ave. Depois herdamos dessa classe Ave uma classe chamada Pato. Precisamos mudar o código para o método "voar", pois o pato não voa tão bem. E se herdamos da classe Ave uma nova classe chamada Falcao. Também precisamos alterar as informações do método "voar". Isso é o polimorfismo.
+
+``` javascript
+class Atleta {
+  peso;
+  categoria;
+
+  constructor(peso) {
+    this.peso =peso
+  }
+
+  definirCategoria() {
+    if(this.peso <= 50) {
+      this.categoria = 'infantil'
+    } else if (this.peso <= 65) {
+      this.categoria = 'juvenil'
+    } else {
+      this.categoria = 'adulto'
+    }
+  }
+}
+
+class Lutador extends Atleta {
+  constructor(peso) {
+    super(peso)
+  }
+
+  definirCategoria() {
+    if(this.peso <= 54) {
+      this.categoria = 'pluma'
+    } else if (this.peso <= 60) {
+      this.categoria = 'leve'
+    } else if (this.peso <= 75) {
+      this.categoria = 'meio-leve'
+    } else {
+      this.categoria = 'pesado'
+    }
+  }
+}
+```
