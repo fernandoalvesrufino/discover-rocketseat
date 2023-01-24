@@ -83,3 +83,15 @@ Um objeto herda de outro que herda de outra até chegar à classe pai.
 Ex: No exemplo citado anteriormente, a opção 'id' por ser um número, vai herdar tudo o que for de um número. E a opção 'nome' por ser string, vai herdar tudo de string.
 
 Aqui as classes são apenas maneiras bonitas de representar protótipos.
+
+## Encapsulamento
+
+Podemos dirigir um carro, mesmo sem saber como funciona o motor do carro.
+
+- Significa "colocar numa capsula"
+- Agrupamento de funções e variáveis
+  - Todas as funções e variáveis que estavam espalhadas no código, agora estão dentro de uma classe
+- Esconde detalhes de implementação
+  - Usamos os objetos, mas por baixo dos panos acontecem muito mais coisas
+  - Ex: Não precisamos, toda vez que formos dar partida no carro, pensar no funcionamento de cada componente para isso acontecer
+- Camada de segurança para os atributos e os métodos
