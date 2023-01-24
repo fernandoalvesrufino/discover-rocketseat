@@ -207,3 +207,53 @@ class Lutador extends Atleta {
   }
 }
 ```
+
+## Abstração
+Template ou identidade de uma classe que será construuida no futuro
+
+- Atributos e métodos podem ser criados na classe de Abstração (Superclasse) MAS
+- A implementação dos métodos e atributos, só poderá ser feita na classe que irá herdar essa Abstração (aqui não é implementado nada, apenas na classe que irá herdar)
+
+``` javascript
+class Parafuso {
+  constructor() {
+    if (this.constructor == Parafuso) 
+      throw new Error('Classe abstrata não pode ser instânciada!')
+  }
+
+  get tipo() {
+    throw new Error('Método "get tipo()" precisa ser implementado!')
+  }
+}
+
+
+class Fenda extends Parafuso {
+  constructor() { super() }
+
+  get tipo() { 
+    return 'fenda'
+  }
+}
+
+class Philips extends Parafuso {
+  constructor() { super() }
+
+  get tipo() { 
+    return 'philips'
+  }
+}
+
+class Allen extends Parafuso {}
+  // Criar e usar
+  // new Parafuso() // 'Classe abstrata não pode ser instanciada'
+  let fenda = new Fenda()
+  let philips = new Philips()
+  let allen = new Allen()
+
+  console.log(fenda.tipo, philips.tipo)
+  // console.log(allen.tipo)
+```
+
+Nesse exemplo, só existe parafuso se ele for de algum tipo específico como:
+Fenda, Philips ou Allen.
+
