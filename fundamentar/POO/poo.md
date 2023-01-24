@@ -95,3 +95,23 @@ Podemos dirigir um carro, mesmo sem saber como funciona o motor do carro.
   - Usamos os objetos, mas por baixo dos panos acontecem muito mais coisas
   - Ex: Não precisamos, toda vez que formos dar partida no carro, pensar no funcionamento de cada componente para isso acontecer
 - Camada de segurança para os atributos e os métodos
+
+``` javascript
+class Poligono {
+  constructor(altura,largura) {
+    this.altura = altura
+    this.largura = largura
+  }
+
+  get area() {
+    return this.#calcularArea()
+  }
+
+  // Essa # significa que essa funcao/metodo nao sera visivel la fora. O acesso a ele so pode ser feito dentro dessa classe
+  #calcularArea() {
+    return this.altura * this.largura
+  }
+}
+
+let poligono = new Poligono(50, 60)
+```
